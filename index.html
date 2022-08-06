@@ -168,17 +168,17 @@
             </div>
         </div>
 
-        <div class="row imb-mission-container imb-blue-background min-vh-100" id="imb-philosophy-container">
+        <div class="row imb-mission-container imb-gray-background min-vh-100" id="imb-philosophy-container">
             <div class="col-md-4 col-sm-12 col-12 imb-mission-img-container order-last order-sm-last order-md-first d-flex">
                 <div class="d-flex flex-column justify-content-center">
                     <img class="imb-mission-img" src="assets/images/filosofía.jpeg" alt="Imagen misión">
                 </div>
             </div>
 
-            <div class="col-md-8 col-sm-12 col-12 imb-mission-text-container d-flex">
+            <div class="col-md-8 col-sm-12 col-12 imb-vision-text-container d-flex">
                 <div class="d-flex flex-column justify-content-center">
-                    <h2 class="imb-mission-title">Filosofía</h2>
-                    <p class="imb-mission-text">
+                    <h2 class="imb-vision-title">Filosofía</h2>
+                    <p class="imb-vision-text">
                         En Inmobiliaria Moscati, contamos con una cultura organizacional orientada a las personas,
                         nuestra estructura operativa y plataforma tecnológica, promueven la creatividad y el liderazgo
                         de nuestro equipo de trabajo y se colabora de forma asertiva con la Misión y Visión, siempre con
@@ -188,11 +188,11 @@
             </div>
         </div>
 
-        <div class="row imb-vision-container imb-gray-background min-vh-100" id="imb-values-container">
-            <div class="col-md-8 col-sm-12 col-12 imb-vision-text-container d-flex">
+        <div class="row imb-vision-container imb-blue-background min-vh-100" id="imb-values-container">
+            <div class="col-md-8 col-sm-12 col-12 imb-mission-text-container d-flex">
                 <div class="d-flex flex-column justify-content-center">
-                    <h2 class="imb-vision-title">Valores</h2>
-                    <p class="imb-vision-text">
+                    <h2 class="imb-mission-title">Valores</h2>
+                    <p class="imb-mission-text">
                         Todos dentro de la organización colaboramos con un real compromiso y sentido de pertenencia.
                         Contamos con un clima organizacional participativo de cordialidad, sentimos orgullo y
                         satisfacción por formar parte del equipo y lo demostramos con esfuerzo y empeño.
@@ -214,19 +214,15 @@
                     <form method="POST" action="contact.php">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input name="nombre" required type="text" id="nombre"
-                                   class="form-control" placeholder="Tu nombre">
+                            <input placeholder="Tu nombre" name="nombre" type="text" id="nombre" class="form-control" required >
                         </div>
                         <div class="form-group">
                             <label for="correo">Correo electrónico</label>
-                            <input name="correo" required type="email" id="correo"
-                                   class="form-control" placeholder="Tu correo electrónico">
+                            <input placeholder="Tu correo electrónico" name="correo" type="email" id="correo" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="mensaje">Mensaje</label>
-                            <textarea required placeholder="Escribe tu mensaje"
-                                      class="form-control" name="mensaje" id="mensaje"
-                                      cols="30" rows="5" ></textarea>
+                            <textarea placeholder="Escribe tu mensaje" name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" required></textarea>
                         </div>
                         <div class="form-group">
                             <button class="btn-success btn" type="submit">
@@ -236,7 +232,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex">
+            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex ">
                 <div class="d-flex flex-column justify-content-center">
                     <video class="imb-crane-video" src="assets/video/crane.mp4" muted loop autoplay></video>
                 </div>

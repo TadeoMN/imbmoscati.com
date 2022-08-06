@@ -662,14 +662,14 @@ p {
 /*CONTACT CONTAINER*/
 .imb-crane-video-container {
     margin-top: 5rem;
-    text-align: center!important;
 }
 .imb-crane-video {
-    padding: 1.5rem;
-    border-radius: var(--imb-border-radius);
+    width: 90%;
+    padding: 0;
+    border-radius: 2.75rem!important;
 }
 .imb-contact-title {
-    line-height: 2;
+    line-height: 1.5;
     text-align: center;
     margin: 0 0 3rem 0;
     color: var(--imb-black-700);
@@ -677,7 +677,7 @@ p {
     letter-spacing: var(--imb-letter-spacing);
 }
 .imb-contact-subtitle {
-    line-height: 2;
+    line-height: 1.5;
     text-align: center;
     margin: 0 0 3rem 0;
     color: var(--imb-black-700);
