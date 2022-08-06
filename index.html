@@ -12,8 +12,8 @@
 </head>
 <body>
     <!-- HEADER CONTAINER -->
-    <header>
-        <nav class="navbar navbar-expand-md sticky-top bg-light imb-navbar">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-light imb-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand imb-logo" href="#">
                     <img src="assets/images/logo-inmobiliaria.svg" alt="Logo inmobiliaria" class="imb-img-logo">
@@ -21,7 +21,6 @@
                 <button class="navbar-toggler imb-toggle-hamburger" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="hamburger material-icons">menu</span>
-<!--                    <span class="navbar-toggler-icon"></span>-->
                 </button>
                 <div class="offcanvas offcanvas-start imb-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header imb-offcanvas-header">
@@ -33,39 +32,51 @@
                     <div class="offcanvas-body imb-offcanvas-body">
                         <ul class="navbar-nav">
                             <li class="nav-item imb-nav-item">
-                                <a class="imb-nav-link" href="#">Misión</a>
+                                <a class="imb-nav-link" href="#imb-mission-container">Misión</a>
                             </li>
                             <li class="nav-item imb-nav-item">
-                                <a class="imb-nav-link" href="#">Visión</a>
+                                <a class="imb-nav-link" href="#imb-vision-container">Visión</a>
                             </li>
                             <li class="nav-item imb-nav-item">
-                                <a class="imb-nav-link" href="#">Colaboradores</a>
+                                <a class="imb-nav-link" href="#imb-collaborators-container">Colaboradores</a>
                             </li>
                             <li class="nav-item imb-nav-item">
-                                <a class="imb-nav-link" href="#">Divisiones</a>
+                                <a class="imb-nav-link" href="#imb-division-container">Divisiones</a>
                             </li>
                             <li class="nav-item imb-nav-item">
-                                <a class="imb-nav-link" href="#">Contacto</a>
+                                <a class="imb-nav-link" href="#imb-philosophy-container">Filosofía</a>
+                            </li>
+                            <li class="nav-item imb-nav-item">
+                                <a class="imb-nav-link" href="#imb-values-container">Valores</a>
+                            </li>
+                            <li class="nav-item imb-nav-item">
+                                <a class="imb-nav-link" href="#imb-contact-container">Contáctanos</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <ul class="nav d-sm-none d-none d-md-flex">
+                <ul class="nav d-md-none d-sm-none d-none d-lg-flex">
                     <li class="nav-item">
-                        <a class="imb-nav-link" href="#">Misión</a>
+                        <a class="imb-nav-link" href="#imb-mission-container">Misión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="imb-nav-link" href="#">Visión</a>
+                        <a class="imb-nav-link" href="#imb-vision-container">Visión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="imb-nav-link" href="#">Colaboradores</a>
+                        <a class="imb-nav-link" href="#imb-collaborators-container">Colaboradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="imb-nav-link" href="#">Divisiones</a>
+                        <a class="imb-nav-link" href="#imb-division-container">Divisiones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="imb-nav-link" href="#">Contacto</a>
+                        <a class="imb-nav-link" href="#imb-philosophy-container">Filosofía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="imb-nav-link" href="#imb-values-container">Valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="imb-nav-link" href="#imb-contact-container">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -76,57 +87,199 @@
     <!-- MAIN CONTAINER -->
     <main class="container-fluid">
         <div class="row imb-banner-background align-items-center">
-            <div class="col-12 imb-banner-col px-2 px-sm-2 px-md-5">
-                <h2 class="imb-banner-text">"Para Inmobiliaria Moscati, nuestro propósito es la excelencia"</h2>
+            <div class="col-12 imb-banner-col">
+                <h2 class="imb-banner-tittle">"Para Inmobiliaria Moscati, nuestro propósito es la excelencia"</h2>
             </div>
         </div>
 
-        <div class="row imb-blue-background">
-            <div class="col-md-4 col-12 p-0 my-auto">
-                <div class="imb-mission-img">
-                    <img class="w-100" src="assets/images/crane.jpeg" alt="imagen misión">
+        <div class="row imb-mission-container imb-blue-background min-vh-100" id="imb-mission-container">
+            <div class="col-md-4 col-sm-12 col-12 imb-mission-img-container order-last order-sm-last order-md-first d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <img class="imb-mission-img" src="assets/images/crane.jpeg" alt="Imagen misión">
                 </div>
             </div>
 
-            <div class="col-md-8 col-12 p-4 d-flex flex-column justify-content-start order-first order-md-last">
-                <h3 class="imb-mission-title">Misión</h3>
-                <p class="imb-mission-text pb-5">
-                    Inmobiliaria Moscati es una empresa mexicana comprometida con el desarrollo de proyectos de obra
-                    pública y privada, especialista en infraestructura del sector salud y demás espacios habitables.
-                </p>
-                <p class="imb-mission-text">
-                    Nos destacamos por la excelencia e innovación en un entorno global y estamos comprometidos con un
-                    desarrollo sustentable enfocado a la satisfacción de nuestros clientes. Para esto, contamos con el
-                    mejor equipo de colaboradores que se destacan por sus valores y actitud proactiva y propositiva,
-                    siempre buscando la excelencia en la calidad, mediante la implementación de metodologías y
-                    procesos eficaces y eficientes.
-                </p>
-            </div>
-        </div>
-
-        <div class="row imb-gray-background">
-            <div class="col-md-8 col-12 p-4 d-flex flex-column justify-content-start">
-                <h3 class="imb-vision-title">Visión</h3>
-                <p class="imb-vision-text">
-                    En Inmobiliaria Moscati trabajamos permanentemente con un enfoque de competencia para ser los mejores
-                    constructores y contar con los mejores proyectos inmobiliarios en el sector médico, residencial y
-                    comercial del país. Nos mantenemos en una sinergia de reingeniería de procesos para adoptar,
-                    implementar y desarrollar tecnología de vanguardia en todos nuestros proyectos.
-                </p>
-            </div>
-            <div class="col-md-4 col-12 p-0">
-                <div class="imb-mission-img">
-                    <img class="w-100" src="assets/images/vision.jpeg" alt="imagen misión">
+            <div class="col-md-8 col-sm-12 col-12 imb-mission-text-container d-flex">
+                <div class="d-flex flex-column justify-content-start">
+                    <h2 class="imb-mission-title">Misión</h2>
+                    <p class="imb-mission-text">
+                        Inmobiliaria Moscati es una empresa mexicana comprometida con el desarrollo de proyectos de obra
+                        pública y privada, especialista en infraestructura del sector salud y demás espacios habitables.
+                    </p>
+                    <p class="imb-mission-text">
+                        Nos destacamos por la excelencia e innovación en un entorno global y estamos comprometidos con un
+                        desarrollo sustentable enfocado a la satisfacción de nuestros clientes. Para esto, contamos con el
+                        mejor equipo de colaboradores que se destacan por sus valores y actitud proactiva y propositiva,
+                        siempre buscando la excelencia en la calidad, mediante la implementación de metodologías y
+                        procesos eficaces y eficientes.
+                    </p>
                 </div>
             </div>
         </div>
 
+        <div class="row imb-vision-container imb-gray-background min-vh-100" id="imb-vision-container">
+            <div class="col-md-8 col-sm-12 col-12 imb-vision-text-container d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <h2 class="imb-vision-title">Visión</h2>
+                    <p class="imb-vision-text">
+                        En Inmobiliaria Moscati trabajamos permanentemente con un enfoque de competencia para ser los mejores
+                        constructores y contar con los mejores proyectos inmobiliarios en el sector médico, residencial y
+                        comercial del país. Nos mantenemos en una sinergia de reingeniería de procesos para adoptar,
+                        implementar y desarrollar tecnología de vanguardia en todos nuestros proyectos.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <img class="imb-vision-img" src="assets/images/vision.jpeg" alt="Imagen visión">
+                </div>
+            </div>
+        </div>
 
-        <div class="row imb-collaborators-background align-items-start">
+        <div class="row imb-collaborators-background align-items-start" id="imb-collaborators-container">
             <div class="col-12 imb-banner-col px-2 px-sm-2 px-md-5">
                 <h2 class="imb-collaborators-text">Equipo de colaboradores</h2>
             </div>
         </div>
+
+        <div class="row imb-blue-background vh-100" id="imb-division-container">
+            <div class="col-md-12 col-12 d-flex flex-column justify-content-center">
+                <h3 class="imb-division-title">Nuestras divisiones</h3>
+                <div class="imb-grid">
+                    <div class="imb-grid-logo">
+                        <img src="assets/images/logo-inmobiliaria.svg" alt="Logo Inmobiliaria">
+                    </div>
+                    <div class="imb-grid-logo">
+                        <img src="assets/images/logo-constructora.svg" alt="Logo Constructora">
+                    </div>
+                    <div class="imb-grid-logo">
+                        <img src="assets/images/logo-concretera.svg" alt="Logo Concretera">
+                    </div>
+                    <div class="imb-grid-logo">
+                        <img src="assets/images/logo-prefabricados.svg" alt="Logo Prefabricados">
+                    </div>
+                    <div class="imb-grid-logo">
+                        <img src="assets/images/logo-carpinteria.svg" alt="Logo Carpintería">
+                    </div>
+                    <div class="imb-grid-logo">
+                        <img src="assets/images/logo-academia.svg" alt="Logo Academia">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row imb-mission-container imb-blue-background min-vh-100" id="imb-philosophy-container">
+            <div class="col-md-4 col-sm-12 col-12 imb-mission-img-container order-last order-sm-last order-md-first d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <img class="imb-mission-img" src="assets/images/filosofía.jpeg" alt="Imagen misión">
+                </div>
+            </div>
+
+            <div class="col-md-8 col-sm-12 col-12 imb-mission-text-container d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <h2 class="imb-mission-title">Filosofía</h2>
+                    <p class="imb-mission-text">
+                        En Inmobiliaria Moscati, contamos con una cultura organizacional orientada a las personas,
+                        nuestra estructura operativa y plataforma tecnológica, promueven la creatividad y el liderazgo
+                        de nuestro equipo de trabajo y se colabora de forma asertiva con la Misión y Visión, siempre con
+                        la intención de atender a nuestros clientes con la solución de sus proyectos y solicitudes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row imb-vision-container imb-gray-background min-vh-100" id="imb-values-container">
+            <div class="col-md-8 col-sm-12 col-12 imb-vision-text-container d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <h2 class="imb-vision-title">Valores</h2>
+                    <p class="imb-vision-text">
+                        Todos dentro de la organización colaboramos con un real compromiso y sentido de pertenencia.
+                        Contamos con un clima organizacional participativo de cordialidad, sentimos orgullo y
+                        satisfacción por formar parte del equipo y lo demostramos con esfuerzo y empeño.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <img class="imb-vision-img" src="assets/images/valores.jpeg" alt="Imagen visión">
+                </div>
+            </div>
+        </div>
+
+        <div class="row imb-vision-container imb-gray-background min-vh-100" id="imb-contact-container">
+            <div class="col-md-8 col-sm-12 col-12 imb-vision-text-container d-flex">
+                <div class="d-flex flex-column justify-content-start">
+                    <h2 class="imb-contact-title m-0">¡Contáctanos!</h2>
+                    <h4 class="imb-contact-subtitle m-0">Contamos con los mejores equipos y procesos de vanguardia</h4>
+                    <form method="POST" action="contact.php">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input name="nombre" required type="text" id="nombre"
+                                   class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input name="correo" required type="email" id="correo"
+                                   class="form-control" placeholder="Tu correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea required placeholder="Escribe tu mensaje"
+                                      class="form-control" name="mensaje" id="mensaje"
+                                      cols="30" rows="5" ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-success btn" type="submit">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex">
+                <div class="d-flex flex-column justify-content-center">
+                    <video class="imb-crane-video" src="assets/video/crane.mp4" muted loop autoplay></video>
+                </div>
+            </div>
+        </div>
+
+<!--        <div class="row imb-gray-background vh-100" id="imb-con-container">-->
+<!--            <div class="col-md-8 col-12 p-md-4 p-4 m-auto">-->
+<!--                <div class="d-flex flex-column justify-content-center">-->
+<!--                    <h2 class="imb-contact-title">¡Contáctanos!</h2>-->
+<!--                    <h4 class="imb-contact-subtitle">Contamos con los mejores equipos y procesos de vanguardia</h4>-->
+<!--                    <form method="POST" action="contact.php">-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="nombre">Nombre</label>-->
+<!--                            <input name="nombre" required type="text" id="nomre"-->
+<!--                                   class="form-control" placeholder="Tu nombre">-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="correo">Correo electrónico</label>-->
+<!--                            <input name="correo" required type="email" id="coreo"-->
+<!--                                   class="form-control" placeholder="Tu correo electrónico">-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="mensaje">Mensaje</label>-->
+<!--                            <textarea required placeholder="Escribe tu mensaje"-->
+<!--                                      class="form-control" name="mensaje" id="mesaje"-->
+<!--                                      cols="30" rows="5" ></textarea>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <button class="btn-success btn" type="submit">-->
+<!--                                Enviar-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-md-4 col-12 m-auto p-0">-->
+<!--                <div class="imb-crane-video-container">-->
+<!--                    <video class="imb-crane-video w-75" src="assets/video/crane.mp4" muted loop autoplay></video>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </main>
     <!-- END MAIN CONTAINER -->
 
