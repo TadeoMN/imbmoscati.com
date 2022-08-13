@@ -137,10 +137,23 @@
             </div>
         </div>
 
-        <div class="row imb-collaborators-background min-vh-100" id="imb-collaborators-container">
-            <div class="col-12 imb-banner-col p-0">
-                <h2 class="imb-collaborators-text">Equipo de colaboradores</h2>
-                <h2 class="imb-collaborators-slogan">"Para constructora Moscati, nuestro propósito es la excelencia"</h2>
+        <div class="row min-vh-100 imb-gray-background imb-collaborators-container" id="imb-collaborators-container">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <h2 class="imb-collaborators-text">Equipo de colaboradores</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <img class="imb-collaborators-img" style="" src="assets/images/collaborators_2.jpeg" alt="Imagen Colaboradores">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0 imb-collaborators-margin">
+                        <h2 class="imb-collaborators-text">"Para constructora Moscati, nuestro propósito es la excelencia"</h2>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -155,6 +168,9 @@
                         <img src="assets/images/logo-constructora.svg" alt="Logo Constructora">
                     </div>
                     <div class="imb-grid-logo">
+                        <img src="assets/images/logo-academia.svg" alt="Logo Academia">
+                    </div>
+                    <div class="imb-grid-logo">
                         <img src="assets/images/logo-concretera.svg" alt="Logo Concretera">
                     </div>
                     <div class="imb-grid-logo">
@@ -162,9 +178,6 @@
                     </div>
                     <div class="imb-grid-logo">
                         <img src="assets/images/logo-carpinteria.svg" alt="Logo Carpintería">
-                    </div>
-                    <div class="imb-grid-logo">
-                        <img src="assets/images/logo-academia.svg" alt="Logo Academia">
                     </div>
                 </div>
             </div>
@@ -213,29 +226,63 @@
                 <div class="d-flex flex-column justify-content-start">
                     <h2 class="imb-contact-title m-0">¡Contáctanos!</h2>
                     <h4 class="imb-contact-subtitle m-0">Contamos con los mejores equipos y procesos de vanguardia</h4>
-                    <form method="POST" action="contact.php">
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input placeholder="Tu nombre" name="nombre" type="text" id="nombre" class="form-control" required >
-                        </div>
-                        <div class="form-group">
-                            <label for="correo">Correo electrónico</label>
-                            <input placeholder="Tu correo electrónico" name="correo" type="email" id="correo" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea placeholder="Escribe tu mensaje" name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn-success btn" type="submit">
-                                Enviar
-                            </button>
-                        </div>
+                    <form action="contact.php" method="post">
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+                        </p>
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+                        </p>
+                        <p>
+                            <label for="telefono" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                        </p>
+
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            Enviar
+                        </button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
                     </form>
+
+<!--                    <form method="POST" action="contact.php">-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="nombre">Nombre</label>-->
+<!--                            <input placeholder="Tu nombre" name="nombre" type="text" id="nombre" class="form-control" required >-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="correo">Correo electrónico</label>-->
+<!--                            <input placeholder="Tu correo electrónico" name="correo" type="email" id="correo" class="form-control" required>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="mensaje">Mensaje</label>-->
+<!--                            <textarea placeholder="Escribe tu mensaje" name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" required></textarea>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <button class="btn-success btn" type="submit">-->
+<!--                                Enviar-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </form>-->
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex ">
-                <div class="d-flex flex-column justify-content-center">
+            <div class="col-md-4 col-sm-12 col-12 imb-vision-img-container d-flex">
+                <div class="d-flex flex-column">
                     <video class="imb-crane-video" src="assets/video/crane.mp4" muted loop autoplay></video>
                 </div>
             </div>
@@ -249,7 +296,7 @@
 <!--                    <form method="POST" action="contact.php">-->
 <!--                        <div class="form-group">-->
 <!--                            <label for="nombre">Nombre</label>-->
-<!--                            <input name="nombre" required type="text" id="nomre"-->
+<!--                            <input name="nombre" required type="text" id="nombre"-->
 <!--                                   class="form-control" placeholder="Tu nombre">-->
 <!--                        </div>-->
 <!--                        <div class="form-group">-->
@@ -260,7 +307,7 @@
 <!--                        <div class="form-group">-->
 <!--                            <label for="mensaje">Mensaje</label>-->
 <!--                            <textarea required placeholder="Escribe tu mensaje"-->
-<!--                                      class="form-control" name="mensaje" id="mesaje"-->
+<!--                                      class="form-control" name="mensaje" id="mensaje"-->
 <!--                                      cols="30" rows="5" ></textarea>-->
 <!--                        </div>-->
 <!--                        <div class="form-group">-->

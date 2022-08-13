@@ -5,12 +5,16 @@
     if (empty($_POST["correo"])) {
         exit("Falta el correo");
     }
+    if (empty($_POST["telefono"])) {
+        exit("Falta el telefono");
+    }
     if (empty($_POST["mensaje"])) {
         exit("Falta el mensaje");
     }
 
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
+    $telefono = $_POST["telefono"];
     $mensaje = $_POST["mensaje"];
 
     $correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
@@ -19,7 +23,7 @@
         exit;
     }
     $asunto = "Nuevo mensaje de sitio web";
-    $datos = "De: $nombre\nCorreo: $correo\nMensaje: $mensaje";
+    $datos = "De: $nombre\nCorreo: $correo\nCorreo: $telefono\nMensaje: $mensaje";
     $mensaje = "Has recibido un mensaje desde el formulario de contacto de tu sitio web. Aquí están los detalles:\n$datos";
     $destinatario = "tadeo.mejia@hospitalmoscati.com"; # aquí la persona que recibirá los mensajes
     $encabezados = "Sender: sistemas@hospitalmoscati.com\r\n"; # El remitente, debe ser un correo de tu dominio de servidor
