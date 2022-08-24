@@ -33,7 +33,8 @@
     if ($resultado) {
         echo "<h1>Mensaje enviado, ¡Gracias por contactarme!</h1>";
         echo "<p>Tu mensaje se ha enviado correctamente.</p>
-              <h2>Importante</h2><p>Revisa tu bandeja de SPAM, en ocasiones mis respuestas quedan ahí. </p>";
+              <h2>Importante</h2>
+              <p>Revisa tu bandeja de SPAM, en ocasiones mis respuestas quedan ahí.</p>";
     } else {
         echo "Tu mensaje no se ha enviado. Intenta de nuevo.";
     }
